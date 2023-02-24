@@ -3,12 +3,13 @@ import {BrowserRouter, Router, Routes, Route, Link} from 'react-router-dom';
 import { Inicio } from './Inicio';
 import { Ejercicios } from './Ejercicios';
 
+
 export const Nav =() =>{
     
     return(
-        <BrowserRouter>
-            <nav>
-                <Link to="/">
+        <BrowserRouter>       
+             <nav className="py-4 text-center navbar-dark bg-dark navbar-expand-lg">
+                <Link to="/" className="mx-2">
                 Inicio
                 </Link>
                 <Link to="/ejercicios">
@@ -18,7 +19,7 @@ export const Nav =() =>{
             <Routes>
               <Route path='/' element= {<Inicio/>}></Route>
               <Route path='/ejercicios' element= {<Ejercicios/>}></Route>
-            </Routes>
+            </Routes> 
       
       </BrowserRouter>
         
