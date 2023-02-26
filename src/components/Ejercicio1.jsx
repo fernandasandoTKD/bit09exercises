@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
+import { GoDiffAdded} from 'react-icons/go';
+import { RiRestartLine} from 'react-icons/ri';
+import { IoMdRemoveCircleOutline} from 'react-icons/io';
+
 
 
 
@@ -21,12 +25,12 @@ useEffect(()=>{
             <Badge bg={color}> {contador}
             </Badge>
             </h2>
-            <Button variant="outline-dark" onClick={()=>setContador(contador - 1)}></Button>
-            <i className='bi bi-dash-circle'></i>
-            <Button variant="outline-dark" onClick={()=>setContador(0)}></Button>
-            <i className='bi bi-circle'></i>
+            <Button variant="outline-dark" onClick={()=>setContador(contador - 1)}><GoDiffAdded/> </Button>
+            
+            <Button variant="outline-dark" onClick={()=>setContador(0)}><RiRestartLine/></Button>
+            
             <Button variant='outline-dark' onClick={() => setContador(contador + 1)}>
-            <i className='bi bi-plus-circle-fill'></i>
+            <IoMdRemoveCircleOutline/>
             </Button>
         </section>
     )

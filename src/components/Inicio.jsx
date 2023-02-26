@@ -1,5 +1,6 @@
 import React from "react";
 import Figure from 'react-bootstrap/Figure';
+import me from './img/me.png'
 
 export const Inicio = () =>{
     return (
@@ -12,7 +13,7 @@ export const Inicio = () =>{
                     width={300}
                     height={291}
                     alt="171x180"
-                    src="src\img/me.png"
+                    src={me}
                 />
                 <Figure.Caption>
                 LUISA DÍAZ SANDOVAL
